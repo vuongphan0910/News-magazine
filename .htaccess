@@ -1,0 +1,6 @@
+RewriteEngine on 
+RewriteRule ^index.html$ index.php
+RewriteRule ^news/(.*).chn$ index.php?p=chitiettin&TieuDe_KhongDau=$1
+RewriteRule ^cate/(.*)/(.*)/$ index.php?p=tintrongloai&Ten_KhongDau=$1&page=$2
+RewriteRule ^cate/(.*)/$ index.php?p=tintrongloai&Ten_KhongDau=$1&page=1
+
